@@ -1,0 +1,80 @@
+
+.footer {
+    padding: 50px 0;
+  }
+  
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Два столбца: левый шире */
+    gap: 20px;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .fullWidth {
+    background: #f3f4f6;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .halfWidth {
+    background: #f3f4f6;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .sectionTitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .contactItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #444;
+  }
+  
+  .icon {
+    font-size: 20px;
+    color: #777;
+  }
+  
+  .workHours {
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+  }
+  
+  .socialIcons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .socialIcon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .socialIcon:hover {
+    transform: scale(1.1);
+  }
+  
+  .mapContainer {
+    grid-column: span 2;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+    
