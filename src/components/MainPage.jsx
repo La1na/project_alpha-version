@@ -37,23 +37,22 @@ const MainPage = () => {
 
   return (
     <div className={styles.container}>
-      {/* Блок с баннером */}
+     
       <section className={styles.banner}>
         <div className={styles.overlay}>
           <button className={styles.bannerButton}>Check out</button>
         </div>
       </section>
 
-      {/* Секция "Categories" */}
       <section className={styles.categories}>
-        {/* <h2>Categories</h2> */}
+        
         <div className={styles.category_container}>
           <h2 className={styles.heading}>Categories</h2>
           <div className={styles.divider}></div>
           <Link to="/categories">
             <button className={styles.filterButton}>All categories</button>
           </Link>
-          {/* <button className={styles.filterButton}>All categories</button> */}
+        
         </div>
         <div className={styles.categoryList}>
           {categories.length > 0 ? (
@@ -80,7 +79,7 @@ const MainPage = () => {
         </div>
       </section>
 
-      {/* Секция "Discount" */}
+
       <section className={styles.discount}>
         <h2>5% off on the first order</h2>
         <div className={styles.bannerWrapper}>

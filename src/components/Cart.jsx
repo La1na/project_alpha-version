@@ -61,16 +61,11 @@ const Cart = () => {
                           $
                           {elem.discont_price ? elem.discont_price : elem.price}
                         </span>
-                        {/* {elem.discont_price ? (
-                      <span className={styles.discountBadge}>{elem.discont_price}</span>
-                    ) : } */}
+                    
                         <span className={styles.oldPrice}>
                           ${elem.discont_price ? elem.price : ""}
                         </span>
-                        {/* {discount > 0 && (
-                      <span className={styles.discountBadge}>-{discount}%</span>
-                    )}
-                    discont_price */}
+                     
                       </div>
                     </div>
                   </div>

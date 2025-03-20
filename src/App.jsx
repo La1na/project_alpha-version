@@ -6,7 +6,7 @@ import Categories from "./components/Categories";
 import Products from "./components/Products";
 import OneItem from "./components/OneItem";
 import Cart from "./components/Cart";
-
+import Error from "./components/Error";
 const App = () => {
   return (
     <Router>
@@ -21,7 +21,7 @@ const App = () => {
           <Route path="/products/:id" element={<OneItem />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/sales" element={<Products />} />
-          {/* <Route path="*" element={<h1>404 Page Not Found</h1>} /> */}
+          <Route path="*" element={<Error/>} />
         </Routes> 
         </main>
         <Footer />

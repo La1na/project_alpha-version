@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        {/* Левая колонка */}
+     
         <div className={styles.column}>
           <div className={styles.fullWidth}>
             <h3 className={styles.sectionTitle}>Phone</h3>
@@ -24,7 +24,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Правая колонка */}
+ 
         <div className={styles.column}>
           <div className={styles.halfWidth}>
             <h3 className={styles.sectionTitle}>Socials</h3>
@@ -44,7 +44,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Карта */}
+     
         <div className={styles.mapContainer}>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.691!2d13.4032!3d52.5117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e1a6f1a3e01%3A0x8b5e3a2c66e2a4e0!2sWallstraße%209-13%2C%2010179%20Berlin%2C%20Germany!5e0!3m2!1sen!2sde!4v1649252542045!5m2!1sen!2sde"

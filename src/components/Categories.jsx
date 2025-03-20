@@ -23,19 +23,17 @@ const Categories =() =>{
 
   return(
 <section className={styles.categories}>
-        {/* <h2>Categories</h2> */}
+        
         <div className={styles.category_container}>
       <h2 className={styles.heading}>Categories</h2>
-      {/* <div className={styles.divider}></div>
-      <Link to="/categories"><button className={styles.filterButton}>All categories</button></Link> */}
-      {/* <button className={styles.filterButton}>All categories</button> */}
+    
     </div>
         <div className={styles.categoryList}>
           {categories.length > 0 ? (
             categories.map((category) => (
                 <div key={category.id} className={styles.categoryItem}>
                   <Link to={{pathname:`./${category.id}`, search: `?category_title=${category.title}`}}>   
-                  {/* <Link to={`${API_URL}categories/${category.id}`}> */}
+                  
                 <img
                   src={category.image}
                   alt={category.title}

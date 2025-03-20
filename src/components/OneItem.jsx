@@ -39,17 +39,17 @@ const OneItem = () => {
   return (
     <section className={styles.products}>
       <div className={styles.saleItems}>
-        {/* return ( */}
+       
         <div key={oneItem.id} className={styles.saleItem}>
           <div className={styles.leftSide}>
             <div className={styles.saleImageWrapper}>
-              {/* <Link to={{pathname:`./${oneItem.id}`}}>   */}
+              
               <img
                 src={oneItem.image}
                 alt={oneItem.title}
                 className={styles.saleImage}
               />
-              {/* </Link> */}
+           
             </div>
           </div>
           <div className={styles.rightSide}>
@@ -70,7 +70,7 @@ const OneItem = () => {
             </div>
           </div>
         </div>
-        {/* ) */}
+      
       </div>
     </section>
   );

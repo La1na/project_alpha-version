@@ -8,13 +8,13 @@ const Products = () => {
   const [products, setProducts] = useState([]);
 
   const [searchParams] = useSearchParams();
-  // searchParams.get("__firebase_request_key")
+ 
   const pageTitle = searchParams.get("category_title");
-  // console.log(searchParams.get("category_title"));
+
 
   const categoryId = useParams().id;
 
-  // console.log(useParams().id);
+
 
   useEffect(() => {
     axios
@@ -33,7 +33,6 @@ const Products = () => {
             (item) =>
               item.categoryId == (categoryId ? categoryId : item.categoryId)
           )
-          //   .slice(0, 4)
         );
       })
       .catch((error) =>
@@ -67,7 +66,7 @@ const Products = () => {
       <div className={styles.saleItems} >
         {products.length > 0 ? (
           products
-            // .filter((item) => item.categoryId == categoryId)
+
             .map((item) => {
               return (
                 <div key={item.id} className={styles.saleItem}>
